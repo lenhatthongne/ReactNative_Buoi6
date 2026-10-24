@@ -1,0 +1,86 @@
+// src/data/phones.ts
+import { ColorKey, Phone } from "../types";
+
+export const PHONE_COLORS: Record<ColorKey, { label: string; hex: string; image: number }> = {
+  silver: { label: "bạc",  hex: "#C9EEFA", image: require("../../assets/vs_silver.png") },
+  red:    { label: "đỏ",   hex: "#E53A2F", image: require("../../assets/vs_red.png") },
+  black:  { label: "đen",  hex: "#000000", image: require("../../assets/vs_black.png") },
+  blue:   { label: "xanh", hex: "#2A4494", image: require("../../assets/vs_blue.png") },
+};
+
+export const COLOR_ORDER: ColorKey[] = ["silver", "red", "black", "blue"];
+
+export const PHONES: Phone[] = [
+  {
+    id: "1",
+    name: "Điện Thoại Vsmart Joy 3 - Hàng chính hãng",
+    price: 1790000,
+    oldPrice: 1790000,
+    rating: 5,
+    reviewCount: 828,
+    supplier: "Tiki Tradding",
+    badge: "Ở ĐÂU RẺ HƠN HOÀN TIỀN",
+    colors: COLOR_ORDER,
+    defaultColor: "blue",
+  },
+  {
+    id: "2",
+    name: "Điện Thoại Vsmart Live 4 - Hàng chính hãng",
+    price: 3990000,
+    oldPrice: 4290000,
+    rating: 4,
+    reviewCount: 312,
+    supplier: "Vsmart Official",
+    badge: "GIÁ SỐC CUỐI TUẦN",
+    colors: COLOR_ORDER,
+    defaultColor: "black",
+  },
+  {
+    id: "3",
+    name: "Điện Thoại Vsmart Star 5 - Hàng chính hãng",
+    price: 2490000,
+    oldPrice: 2790000,
+    rating: 5,
+    reviewCount: 156,
+    supplier: "Tiki Tradding",
+    badge: "TRẢ GÓP 0%",
+    colors: COLOR_ORDER,
+    defaultColor: "blue",
+  },
+  {
+    id: "4",
+    name: "Điện Thoại Vsmart Aris Pro - Hàng chính hãng",
+    price: 6990000,
+    oldPrice: 7490000,
+    rating: 5,
+    reviewCount: 520,
+    supplier: "Vsmart Official",
+    badge: "CAMERA ẨN DƯỚI MÀN HÌNH",
+    colors: COLOR_ORDER,
+    defaultColor: "silver",
+  },
+  {
+    id: "5",
+    name: "Điện Thoại Vsmart Active 3 - Hàng chính hãng",
+    price: 3490000,
+    oldPrice: 3990000,
+    rating: 4,
+    reviewCount: 204,
+    supplier: "Tiki Tradding",
+    badge: "KHUYẾN MÃI LỚN",
+    colors: COLOR_ORDER,
+    defaultColor: "blue",
+  },
+  {
+    id: "6",
+    name: "Điện Thoại Vsmart Bee 3 - Hàng chính hãng",
+    price: 1190000,
+    oldPrice: 1390000,
+    rating: 4,
+    reviewCount: 95,
+    supplier: "Vsmart Official",
+    badge: "GIÁ RẺ CHO MỌI NHÀ",
+    colors: COLOR_ORDER,
+    defaultColor: "black",
+  },
+];
